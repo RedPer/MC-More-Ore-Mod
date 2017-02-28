@@ -1,0 +1,15 @@
+[
+{
+  "modid": "redpermoreoremod",
+  "name": "More Ore Mod",
+  "description": "Adds many ores and tools to Minecraft. Such as Aluminium Ore.",
+  "version": "1.0.0.0-1.12.2-dev",
+  "mcversion": "1.11.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["RedPer", "szumix1111", "seba1288"],
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

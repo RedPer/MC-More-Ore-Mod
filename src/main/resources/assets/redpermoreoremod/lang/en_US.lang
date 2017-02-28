@@ -1,0 +1,11 @@
+item.aluminiumIngot.name=Aluminium Ingot
+item.silverIngot.name=Silver Ingot
+item.amethyst.name=Amethyst
+item.sapphire.name=Sapphire
+item.ruby.name=Ruby
+
+tile.aluminiumOre.name=Aluminium Ore
+tile.silverOre.name=Silver Ore
+tile.amethystOre.name=Amethyst Ore
+tile.sapphireOre.name=Sapphire Ore
+tile.rubyOre.name=Ruby Ore
