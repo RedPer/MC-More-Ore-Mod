@@ -9,3 +9,5 @@ tile.silverOre.name=Silver Ore
 tile.amethystOre.name=Amethyst Ore
 tile.sapphireOre.name=Sapphire Ore
 tile.rubyOre.name=Ruby Ore
+
+itemGroup.tabDefault=More Ore Mod

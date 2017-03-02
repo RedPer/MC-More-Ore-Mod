@@ -19,6 +19,8 @@ public class MoreOreMod {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		
+		ModTabs.init();
+		
 		ModItems.init();
 		ModItems.register();
 		

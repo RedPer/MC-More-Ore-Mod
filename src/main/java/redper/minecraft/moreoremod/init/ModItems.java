@@ -31,8 +31,7 @@ public class ModItems {
 		GameRegistry.register(amethyst);
 		GameRegistry.register(sapphire);
 		GameRegistry.register(ruby);
-		
-		
+
 	}
 	
 	public static void registerRenders() {

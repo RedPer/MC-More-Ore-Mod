@@ -1,5 +1,8 @@
 package redper.minecraft.moreoremod;
 
+import net.minecraft.item.Item;
+import redper.minecraft.moreoremod.init.ModItems;
+
 public class Reference {
 
 	public static final String MOD_ID = "redpermoreoremod";
@@ -62,6 +65,39 @@ public class Reference {
 		
 		public String getRegistryName() {
 			return registryName;
+		}
+		
+	}
+	
+	
+	public static enum OresDropsRef {
+		
+		AMETHYSTORE(ModItems.amethyst, 0, 1),
+		SAPPHIREORE(ModItems.sapphire, 0, 1),
+		RUBYORE(ModItems.ruby, 0, 1);
+		
+		private Item drop;
+		private int damage;
+		private int quantity;
+		
+		private OresDropsRef(Item drop, int damage, int quantity) {
+			
+			this.drop = drop;
+			this.damage = damage;
+			this.quantity = quantity;
+			
+		}
+		
+		public Item getDrop() {
+			return drop;
+		}
+		
+		public int getDamage() {
+			return damage;
+		}
+		
+		public int getQuantity() {
+			return quantity;
 		}
 		
 	}
