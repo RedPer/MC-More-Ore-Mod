@@ -2,14 +2,17 @@ package redper.minecraft.moreoremod.blocks;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import redper.minecraft.moreoremod.Reference;
+import redper.minecraft.moreoremod.init.ModItems;
 import redper.minecraft.moreoremod.init.ModTabs;
 
-public class BlockSapphireOre extends Block{
+public class BlockSapphireOre extends Block {
 
 	public BlockSapphireOre() {
 		super(Material.IRON);
@@ -34,8 +37,12 @@ public class BlockSapphireOre extends Block{
 	}
 	
 	@Override
-	public int quantityDropped(IBlockState state, int fortune, Random random) {
-		return Reference.OresDropsRef.SAPPHIREORE.getQuantity() + random.nextInt(fortune);
+	public int quantityDropped(IBlockState state, int fortune, Random rand) {
+		
+		if(fortune > 0)
+			return Reference.OresDropsRef.SAPPHIREORE.getQuantity() + rand.nextInt(fortune);
+		
+		return Reference.OresDropsRef.SAPPHIREORE.getQuantity();
 	}
 	
 }

@@ -16,6 +16,12 @@ public class ModBlocks {
 	public static Block sapphireOre;
 	public static Block rubyOre;
 	
+	public static Block aluminiumBlock;
+	public static Block silverBlock;
+	public static Block amethystBlock;
+	public static Block sapphireBlock;
+	public static Block rubyBlock;
+	
 	public static void init() {
 	
 		aluminiumOre = new BlockAluminiumOre();
@@ -23,6 +29,12 @@ public class ModBlocks {
 		amethystOre = new BlockAmethystOre();
 		sapphireOre = new BlockSapphireOre();
 		rubyOre = new BlockRubyOre();
+		
+		aluminiumBlock = new BlockAluminium();
+		silverBlock = new BlockSilver();
+		amethystBlock = new BlockAmethyst();
+		sapphireBlock = new BlockSapphire();
+		rubyBlock = new BlockRuby();
 		
 	}
 	
@@ -33,6 +45,12 @@ public class ModBlocks {
 		registerBlock(amethystOre);
 		registerBlock(sapphireOre);
 		registerBlock(rubyOre);
+		
+		registerBlock(aluminiumBlock);
+		registerBlock(silverBlock);
+		registerBlock(amethystBlock);
+		registerBlock(sapphireBlock);
+		registerBlock(rubyBlock);
 		
 	}
 	
@@ -53,6 +71,13 @@ public class ModBlocks {
 		registerRender(amethystOre);
 		registerRender(sapphireOre);
 		registerRender(rubyOre);
+		
+		registerRender(aluminiumBlock);
+		registerRender(silverBlock);
+		registerRender(amethystBlock);
+		registerRender(sapphireBlock);
+		registerRender(rubyBlock);
+		
 		
 	}
 	

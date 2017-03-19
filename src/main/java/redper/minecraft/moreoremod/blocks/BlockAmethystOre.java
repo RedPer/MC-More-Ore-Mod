@@ -35,8 +35,12 @@ public class BlockAmethystOre extends Block{
 	}
 	
 	@Override
-	public int quantityDropped(IBlockState state, int fortune, Random random) {
-		return Reference.OresDropsRef.AMETHYSTORE.getQuantity() + random.nextInt(fortune);
+	public int quantityDropped(IBlockState state, int fortune, Random rand) {
+		
+		if(fortune > 0)
+			return Reference.OresDropsRef.AMETHYSTORE.getQuantity() + rand.nextInt(fortune);
+		
+		return Reference.OresDropsRef.AMETHYSTORE.getQuantity();
 	}
 	
 }

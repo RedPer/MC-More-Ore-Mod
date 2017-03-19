@@ -34,8 +34,12 @@ public class BlockRubyOre extends Block{
 	}
 	
 	@Override
-	public int quantityDropped(IBlockState state, int fortune, Random random) {
-		return Reference.OresDropsRef.RUBYORE.getQuantity() + random.nextInt(fortune);
+	public int quantityDropped(IBlockState state, int fortune, Random rand) {
+		
+		if(fortune > 0)
+			return Reference.OresDropsRef.RUBYORE.getQuantity() + rand.nextInt(fortune);
+		
+		return Reference.OresDropsRef.RUBYORE.getQuantity();
 	}
 	
 }

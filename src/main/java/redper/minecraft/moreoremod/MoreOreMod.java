@@ -27,12 +27,18 @@ public class MoreOreMod {
 		ModBlocks.init();
 		ModBlocks.register();
 		
+		ModGenerators.init();
+		ModGenerators.register();
+		
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		
 		proxy.init();
+		
+		ModCrafting.register();
+		ModSmelting.register();
 		
 	}
 	

@@ -10,4 +10,11 @@ tile.amethystOre.name=Amethyst Ore
 tile.sapphireOre.name=Sapphire Ore
 tile.rubyOre.name=Ruby Ore
 
+tile.aluminiumBlock.name=Aluminium Block
+tile.silverBlock.name=Silver Block
+tile.amethystBlock.name=Amethyst Block
+tile.sapphireBlock.name=Sapphire Block
+tile.rubyBlock.name=Ruby Block
+
+
 itemGroup.tabDefault=More Ore Mod

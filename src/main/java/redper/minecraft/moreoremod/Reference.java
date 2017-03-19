@@ -8,7 +8,7 @@ public class Reference {
 	public static final String MOD_ID = "redpermoreoremod";
 	public static final String NAME = "More Ore Mod";
 	public static final String VERSION = "1.0";
-	public static final String MC_VERSIONS = "[1.11.2]";
+	public static final String MC_VERSIONS = "[1.11, 1.11.2]";
 	
 	public static final String CLIENT_PROXY_CLASS = "redper.minecraft.moreoremod.proxy.ClientProxy";
 	public static final String SERVER_PROXY_CLASS = "redper.minecraft.moreoremod.proxy.ServerProxy";
@@ -47,7 +47,13 @@ public class Reference {
 		SILVERORE("silverOre", "silver_ore"),
 		AMETHYSTORE("amethystOre", "amethyst_ore"),
 		SAPPHIREORE("sapphireOre", "sapphire_ore"),
-		RUBYORE("rubyOre", "ruby_ore");
+		RUBYORE("rubyOre", "ruby_ore"),
+		
+		ALUMINIUMBLOCK("aluminiumBlock", "aluminium_block"),
+		SILVERBLOCK("silverBlock", "silver_block"),
+		AMETHYSTBLOCK("amethystBlock", "amethyst_block"),
+		SAPPHIREBLOCK("sapphireBlock", "sapphire_block"),
+		RUBYBLOCK("rubyBlock", "ruby_block");
 		
 		private String unlocalizedName;
 		private String registryName;
