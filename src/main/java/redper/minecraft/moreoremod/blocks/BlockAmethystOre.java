@@ -6,17 +6,17 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
-import redper.minecraft.moreoremod.Reference;
-import redper.minecraft.moreoremod.init.ModItems;
 import redper.minecraft.moreoremod.init.ModTabs;
+import redper.minecraft.moreoremod.reference.ReferenceModBlocks;
+import redper.minecraft.moreoremod.reference.ReferenceOresDrop;
 
 public class BlockAmethystOre extends Block{
 
 	public BlockAmethystOre() {
 		super(Material.IRON);
 		
-		setUnlocalizedName(Reference.ModBlocksRef.AMETHYSTORE.getUnlocalizedName());
-		setRegistryName(Reference.ModBlocksRef.AMETHYSTORE.getRegistryName());
+		setUnlocalizedName(ReferenceModBlocks.AMETHYSTORE.getUnlocalizedName());
+		setRegistryName(ReferenceModBlocks.AMETHYSTORE.getRegistryName());
 		
 		setHardness(3.0F);
 		setHarvestLevel("pickaxe", 2);
@@ -26,21 +26,21 @@ public class BlockAmethystOre extends Block{
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return Reference.OresDropsRef.AMETHYSTORE.getDrop();
+		return ReferenceOresDrop.AMETHYSTORE.getDrop();
 	}
 	
 	@Override
 	public int damageDropped(IBlockState state) {
-		return Reference.OresDropsRef.AMETHYSTORE.getDamage();
+		return ReferenceOresDrop.AMETHYSTORE.getDamage();
 	}
 	
 	@Override
 	public int quantityDropped(IBlockState state, int fortune, Random rand) {
 		
 		if(fortune > 0)
-			return Reference.OresDropsRef.AMETHYSTORE.getQuantity() + rand.nextInt(fortune);
+			return ReferenceOresDrop.AMETHYSTORE.getQuantity() + rand.nextInt(fortune);
 		
-		return Reference.OresDropsRef.AMETHYSTORE.getQuantity();
+		return ReferenceOresDrop.AMETHYSTORE.getQuantity();
 	}
 	
 }

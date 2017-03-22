@@ -6,16 +6,17 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
-import redper.minecraft.moreoremod.Reference;
 import redper.minecraft.moreoremod.init.ModTabs;
+import redper.minecraft.moreoremod.reference.ReferenceModBlocks;
+import redper.minecraft.moreoremod.reference.ReferenceOresDrop;
 
 public class BlockRubyOre extends Block{
 
 	public BlockRubyOre() {
 		super(Material.IRON);
 		
-		setUnlocalizedName(Reference.ModBlocksRef.RUBYORE.getUnlocalizedName());
-		setRegistryName(Reference.ModBlocksRef.RUBYORE.getRegistryName());
+		setUnlocalizedName(ReferenceModBlocks.RUBYORE.getUnlocalizedName());
+		setRegistryName(ReferenceModBlocks.RUBYORE.getRegistryName());
 		
 		setHardness(5.0F);
 		setHarvestLevel("pickaxe", 3);
@@ -25,21 +26,21 @@ public class BlockRubyOre extends Block{
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return Reference.OresDropsRef.RUBYORE.getDrop();
+		return ReferenceOresDrop.RUBYORE.getDrop();
 	}
 	
 	@Override
 	public int damageDropped(IBlockState state) {
-		return Reference.OresDropsRef.RUBYORE.getDamage();
+		return ReferenceOresDrop.RUBYORE.getDamage();
 	}
 	
 	@Override
 	public int quantityDropped(IBlockState state, int fortune, Random rand) {
 		
 		if(fortune > 0)
-			return Reference.OresDropsRef.RUBYORE.getQuantity() + rand.nextInt(fortune);
+			return ReferenceOresDrop.RUBYORE.getQuantity() + rand.nextInt(fortune);
 		
-		return Reference.OresDropsRef.RUBYORE.getQuantity();
+		return ReferenceOresDrop.RUBYORE.getQuantity();
 	}
 	
 }

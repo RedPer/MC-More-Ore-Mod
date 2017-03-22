@@ -1,15 +1,15 @@
 package redper.minecraft.moreoremod.items;
 
 import net.minecraft.item.Item;
-import redper.minecraft.moreoremod.Reference;
 import redper.minecraft.moreoremod.init.ModTabs;
+import redper.minecraft.moreoremod.reference.ReferenceModItems;
 
 public class ItemSilver extends Item {
 
 	public ItemSilver() {
 		
-		setUnlocalizedName(Reference.ModItemsRef.SILVER.getUnlocalizedName());
-		setRegistryName(Reference.ModItemsRef.SILVER.getRegistryName());
+		setUnlocalizedName(ReferenceModItems.SILVER.getUnlocalizedName());
+		setRegistryName(ReferenceModItems.SILVER.getRegistryName());
 		
 		setCreativeTab(ModTabs.ctDefault);
 		

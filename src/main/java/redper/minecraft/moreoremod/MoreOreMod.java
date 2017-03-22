@@ -6,14 +6,15 @@ import net.minecraftforge.fml.common.event.*;
 import net.minecraftforge.fml.common.*;
 import redper.minecraft.moreoremod.init.*;
 import redper.minecraft.moreoremod.proxy.CommonProxy;
+import redper.minecraft.moreoremod.reference.*;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSIONS)
+@Mod(modid = ReferenceMod.MOD_ID, name = ReferenceMod.NAME, version = ReferenceMod.VERSION, acceptedMinecraftVersions = ReferenceMod.MC_VERSIONS)
 public class MoreOreMod {
 
 	@Instance
 	public static MoreOreMod instance;
 	
-	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+	@SidedProxy(clientSide = ReferenceProxy.CLIENT_PROXY_CLASS, serverSide = ReferenceProxy.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
 	
 	@EventHandler

@@ -27,7 +27,7 @@ minecraft {
     version = minecraft_version + "-" + forge_version
     runDir = "run"
 	
-	replaceIn "Reference.java"
+	replaceIn "ReferenceMod.java"
     replace "@VERSION@", "${mod_version}-${mod_version_suffix}"
 	
     mappings = mcp_mappings
