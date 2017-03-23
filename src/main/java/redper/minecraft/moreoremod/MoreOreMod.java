@@ -5,7 +5,7 @@ import net.minecraftforge.fml.common.Mod.*;
 import net.minecraftforge.fml.common.event.*;
 import net.minecraftforge.fml.common.*;
 import redper.minecraft.moreoremod.init.*;
-import redper.minecraft.moreoremod.proxy.CommonProxy;
+import redper.minecraft.moreoremod.proxy.IProxy;
 import redper.minecraft.moreoremod.reference.*;
 
 @Mod(modid = ReferenceMod.MOD_ID, name = ReferenceMod.NAME, version = ReferenceMod.VERSION, acceptedMinecraftVersions = ReferenceMod.MC_VERSIONS)
@@ -15,7 +15,7 @@ public class MoreOreMod {
 	public static MoreOreMod instance;
 	
 	@SidedProxy(clientSide = ReferenceProxy.CLIENT_PROXY_CLASS, serverSide = ReferenceProxy.SERVER_PROXY_CLASS)
-	public static CommonProxy proxy;
+	public static IProxy proxy;
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
@@ -36,7 +36,7 @@ public class MoreOreMod {
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		
-		proxy.init();
+		proxy.init(event);
 		
 		ModCrafting.register();
 		ModSmelting.register();
@@ -45,6 +45,11 @@ public class MoreOreMod {
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
+		
+	}
+	
+	@EventHandler
+	public void serverStarting(FMLServerStartingEvent event) {
 		
 	}
 	
