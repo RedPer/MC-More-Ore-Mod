@@ -51,7 +51,7 @@ public class OreGenerator implements IWorldGenerator {
 		generateBlock(ModBlocks.silverOre, world, rand, x, z, 2, 10, 40, 0, 80);
 		generateBlock(ModBlocks.amethystOre, world, rand, x, z, 2, 8, 20, 0, 60);
 		generateBlock(ModBlocks.sapphireOre, world, rand, x, z, 2, 6, 10, 0, 40);
-		generateBlock(ModBlocks.rubyOre, world, rand, x, z, 2, 4, 60, 2, 10);
+		generateBlock(ModBlocks.rubyOre, world, rand, x, z, 2, 4, 5, 0, 10);
 		
 	}
 	

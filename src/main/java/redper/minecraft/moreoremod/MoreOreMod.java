@@ -25,6 +25,10 @@ public class MoreOreMod {
 		ModItems.init();
 		ModItems.register();
 		
+		ModTools.initMaterials();
+		ModTools.init();
+		ModTools.register();
+		
 		ModBlocks.init();
 		ModBlocks.register();
 		
