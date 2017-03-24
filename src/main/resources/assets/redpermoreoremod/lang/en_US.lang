@@ -4,6 +4,8 @@ item.amethyst.name=Amethyst
 item.sapphire.name=Sapphire
 item.ruby.name=Ruby
 
+item.rubySword.name=Ruby Sword
+
 tile.aluminiumOre.name=Aluminium Ore
 tile.silverOre.name=Silver Ore
 tile.amethystOre.name=Amethyst Ore
